@@ -1,0 +1,324 @@
+$OpenSans: 'Open Sans', sans-serif
+$RopaSans: 'Ropa Sans', sans-serif
+
+*
+    text-decoration: none
+    box-sizing: border-box
+    outline: none 
+    margin: 0
+    padding: 0
+
+a 
+    display: block
+
+img 
+    height: auto
+    max-width: 100%
+
+     
+.container
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+.row 
+    display: flex
+    flex-wrap: wrap
+
+.col    
+    margin: 0 15px
+    position: relative
+
+.col--50 
+    width: calc( 50% - 30px)
+
+.col--60 
+    width: calc( 60% - 30px)
+
+.col--40 
+    width: calc( 40% - 30px)
+
+
+body 
+    font-family: $OpenSans
+    font-weight: 400
+    font-size: 19px
+    color: #222222
+
+.header
+    background-color: #002ea7 
+    padding: 30px 0
+
+    &.fixed 
+        position: fixed
+        width: 100%
+        z-index: 100
+        padding: 15px 0
+
+.logo
+    margin: 0 auto
+    display: block
+
+.slider
+    background-color: #002ea7
+    padding-top: 3em
+    color: #fff
+
+.copy   
+    display: flex
+    flex-direction: column
+    height: 100%
+    justify-content: center
+
+    h1 
+        font-size: 1.3rem
+        margin-bottom: 20px
+        line-height: 1.2em
+
+    .subtitle
+        font-size: 1.2rem
+
+    .subtitle-x2
+        font-size: 3rem
+        margin-bottom: 10px
+        font-family: $RopaSans
+        line-height: normal
+        span 
+            color: #00f7c2
+            font-weight: 700
+    .btn 
+        font-family: $RopaSans
+        padding: 10px 22px 10px
+        display: inline-block
+        font-weight: 700
+        font-size: 25px
+        position: relative
+        line-height: 1em
+        letter-spacing: 1px
+        text-transform: uppercase
+        background: #00f7c2
+        color: #0032a3
+        max-width: 243px
+        margin: 1em 0
+        &:hover 
+            background-color: #fff
+
+.image-banner
+    width: 100%
+    max-width: 320px
+    margin: 0 auto
+    display: block
+
+
+.carrousel
+    padding: 80px 0
+    h2 
+        font-family: $RopaSans
+        font-weight: 700 
+        font-size: 40px
+        text-align: center
+        margin-bottom: 40px
+
+.owl-theme 
+    .owl-dots 
+        .owl-dot
+            &.active, 
+            &:hover 
+                span
+                    background: #002ea7 
+
+
+.servicios 
+    padding: 80px 0;
+    background-color: #f6f6f6
+    h2 
+        font-family: $RopaSans
+        font-weight: 700 
+        font-size: 40px
+        text-align: center
+        margin-bottom: 30px
+    p
+        margin-bottom: 1.2em
+        i 
+            font-weight: 700
+    h3
+        font-family: $RopaSans
+        font-size: 35px
+        font-weight: 400
+        text-align: center
+
+.titulo-principal-servicios
+    margin: 2em 0 0
+
+.servicio
+    margin: 4em 0 4em
+    .row
+        align-items: center
+    .title-servicio
+        font-family: $RopaSans
+        text-align: left
+        font-weight: 700
+        font-size: 37px
+        margin-bottom: 20px
+    .poster-servicio
+        margin: 0 auto
+        display: block
+        &:hover 
+            transform: scale(1.03)
+            transition: 0.3s
+
+.btn-ver 
+    padding: 10px 22px 10px
+    display: inline-block
+    font-family: $RopaSans
+    font-weight: 500
+    font-size: 1.2rem
+    position: relative
+    line-height: 1em
+    letter-spacing: 1px
+    text-transform: uppercase
+    background-color: #0032a3
+    color: #fff
+    &:hover 
+        background: #2196f3
+        color: #ffffff
+
+.cta 
+    background-color: #0032a3
+    padding: 100px 0
+    color: #fff 
+    text-align: center
+    h2 
+       font-family: $RopaSans
+       font-size: 40px
+       font-weight: 700
+       margin-bottom: 30px
+    p 
+        font-size: 1.3rem 
+    i
+        text-transform: uppercase
+    .btn 
+        background: #00f7c2;
+        color: #0032a3;
+        padding: 10px 22px 10px;
+        display: inline-block;
+        font-family: $RopaSans
+        font-weight: 600;
+        font-size: 25px;
+        position: relative;
+        line-height: 1em;
+        letter-spacing: 1px;    
+        text-transform: uppercase
+        margin-top: 1em
+        &:hover 
+            background: #fff
+            color: #0032a3   
+
+.footer 
+    background-color: #353333
+    color: #fff 
+    font-size: 14px
+    padding: 20px 40px
+    nav 
+        display: flex
+        justify-content: end
+        a 
+            margin: 0 10px
+    a 
+        color: #fff 
+        &:hover 
+            color: #00f7c2
+
+
+// Responsive 
+@media (max-width: 944px)
+    .footer
+        text-align: center
+        padding: 20px 0px
+        .col--50
+            &:first-child
+                order: 2
+            width: 100%
+        nav 
+            justify-content: center
+            margin-bottom: 20px
+
+
+@media (max-width: 812px)
+    .slider
+        padding: 3em 0
+        text-align: center
+        .col--60,
+        .col--40
+            width: 100%
+        .image-banner
+            display: none
+    .copy 
+        .btn
+            margin: 1em auto 0
+
+
+
+@media (max-width: 650px)
+    .servicio
+        margin: 3em 0
+        &:last-child
+            margin-bottom: 0px
+        .col--50
+            width: 100%
+            &.content
+                order: 2 
+            &.image
+                order: 1
+                margin-bottom: 20px   
+        .btn-ver
+            display: block
+            text-align: center
+
+
+@media (max-width: 525px)
+    .footer 
+        nav 
+            flex-direction: column
+            a 
+                margin: 3px 0
+
+@media (max-width: 425px)
+    .copy 
+        .subtitle 
+            font-size: 1rem
+        .subtitle-x2
+            font-size: 1.8rem
+        .btn 
+            font-size: 18px
+    .carrousel 
+        padding: 40px 0
+        h2
+            font-size: 30px
+    .servicios 
+        padding: 40px 0
+        h2
+            font-size: 30px
+        p 
+            font-size: 0.9em;
+            text-align: center
+        h3 
+            font-size: 30px
+
+    .servicio              
+        p 
+            text-align: left
+
+        .title-servicio
+            font-size: 25px
+
+    .cta 
+        padding: 40px 0
+        h2 
+            font-size: 30px
+        p 
+            font-size: 0.9em
+        .btn 
+            font-size: 18px
